@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    background-image: radial-gradient(circle farthest-corner at 14.2% 24%, rgba(239, 61, 78, 1) 0%, rgba(239, 61, 78, 0.81) 51.8%, rgba(239, 61, 78, 0.63) 84.6%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+header {
+    margin-top-50px: ;
+    width: 80%;
+    display: grid;
+    grid-template-areas: "profil profil" "intro intro" "story skill" "edu lang" "sosmed sosmed";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px 30px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.profile-img {
+    margin-top: 90px;
+    background-image: url(image/gambar2.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+
+.profile-img:hover {
+    filter: blur(2px);
+    cursor: not-allowed;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-filter: blur(2px);
+}
+
+.panel-intro {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    grid-area: intro;
+    justify-self: center;
+}
+
+.panel-intro .intro1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.panel-intro .intro2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.story {
+    grid-area: story;
+    padding: 20px;
+}
+
+.skill {
+    grid-area: skill;
+}
+
+.story,
+.language {
+    box-shadow: 0 0 10px black;
+    background-color: rgb(139, 139, 211);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skill,
+.education {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: rgb(228, 202, 202);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.education {
+    grid-area: edu;
+}
+
+.language {
+    grid-area: lang;
+    padding: 20px;
+}
+
+.story:hover,
+.language:hover,
+.education:hover,
+.skill:hover {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+
+/* panel sosmed */
+
+.sosmed {
+    color: white;
+    grid-area: sosmed;
+    justify-self: center;
+    box-shadow: rgba(0 0 30px) rgba(255, 255, 255, 0.6);
+    width: 400px;
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: wafe 1s linear infinite;
+    -webkit-animation: wafe 1s linear infinite;
+}
+
+@keyframes wafe {
+    0% {
+        box-shadow: rgba(0 0 30px) rgba(255, 255, 255, 0.6);
+    }
+    20% {
+        box-shadow: rgba(0 0 30px) red;
+    }
+    40% {
+        box-shadow: rgba(0 0 30px) yellow;
+    }
+    60% {
+        box-shadow: rgba(0 0 30px) blue;
+    }
+    80% {
+        box-shadow: rgba(0 0 30px) orange;
+    }
+    100 {
+        box-shadow: rgba(0 0 30px) purple;
+    }
+}
+
+.sosmed i {
+    font-size: 2em;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+}
+
+i:hover {
+    font-size: 3em;
+}
+
+.story,
+.language,
+.education,
+.skill {
+    transition: all 800ms ease;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+}
